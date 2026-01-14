@@ -94,14 +94,24 @@ const AbstractSection = () => {
             </div>
 
             {/* Publications Info */}
-            <div className="card-base border-accent/30 bg-accent/5">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-6 h-6 text-accent" />
-                </div>
+            <div className="relative card-base border border-accent/40 
+                  bg-gradient-to-br from-accent/10 via-accent/5 to-background
+                  shadow-[0_0_30px_rgba(99,102,241,0.25)]
+                  hover:shadow-[0_0_45px_rgba(99,102,241,0.4)]
+                  transition-all duration-300">
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg 
+                              bg-accent/30 
+                              ring-2 ring-accent/50
+                              flex items-center justify-center flex-shrink-0">
+                <BookOpen className="w-6 h-6 text-accent" />
+              </div>
                 <div>
-                  <h4 className="font-heading font-semibold text-lg mb-2">Publications</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <h4 className="font-heading font-semibold text-lg mb-2 text-accent">
+                    Publications
+                  </h4>
+                  <p className="text-sm font-semibold text-muted-foreground">
                     The Organizing Committee is in contact with possible publishers for book chapters or indexed conference proceedings. Updates will be shared soon.
                   </p>
                 </div>

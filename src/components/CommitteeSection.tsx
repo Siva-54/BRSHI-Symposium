@@ -30,14 +30,14 @@ const committee = {
   ],
   convenors: [
     {
-      name: "Dr. Aditya Kumar Das",
-      role: "Convenor",
-      image: convenor1,
-    },
-    {
       name: "Dr. Gourab Saha",
       role: "Convenor",
       image: convenor2,
+    },
+    {
+      name: "Dr. Aditya Kumar Das",
+      role: "Convenor",
+      image: convenor1,
     },
   ],
 };

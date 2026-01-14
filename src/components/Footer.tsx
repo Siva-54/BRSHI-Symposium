@@ -57,8 +57,8 @@ const Footer = () => {
             <ul className="space-y-3 text-sm opacity-80">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:brshi2026@nitrkl.ac.in" className="hover:opacity-100">
-                  brshi2026@nitrkl.ac.in
+                <a href="mailto:brshi2026@gmail.com" className="hover:opacity-100">
+                  brshi2026@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

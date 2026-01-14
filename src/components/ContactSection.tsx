@@ -38,10 +38,10 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-heading font-semibold text-lg mb-1">Email</h3>
                   <a
-                    href="mailto:brshi2026@nitrkl.ac.in"
+                    href="mailto:brshi2026@gmail.com"
                     className="text-primary hover:underline"
                   >
-                    brshi2026@nitrkl.ac.in
+                    brshi2026@gmail.com
                   </a>
                 </div>
               </div>
@@ -53,12 +53,12 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-heading font-semibold text-lg mb-1">Website</h3>
                   <a
-                    href="https://www.brshi2026nitrkl.ac.in"
+                    href="https://brshi2026nitrkl.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
                   >
-                    www.brshi2026nitrkl.ac.in
+                    https://brshi2026nitrkl.com
                   </a>
                 </div>
               </div>

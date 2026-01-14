@@ -104,12 +104,6 @@ const HeroSection = () => {
               Register Now
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a
-              href="#abstract"
-              className="btn-outline"
-            >
-              Submit Abstract
-            </a>
           </motion.div>
 
           {/* Organizer Logo */}

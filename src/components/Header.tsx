@@ -9,7 +9,7 @@ const navLinks = [
   // { href: "#themes", label: "Themes" },
   // { href: "#dates", label: "Important Dates" },
   { href: "#registration", label: "Registration" },
-  // { href: "#abstract", label: "Call for Abstract" },
+  { href: "#abstract", label: "Call for Abstract" },
   { href: "#speakers", label: "Speakers" },
   { href: "#committee", label: "Committee" },
   // { href: "#accommodation", label: "Accommodation" },
