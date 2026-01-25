@@ -98,9 +98,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc_F1xdBDn-7uf66Wgpc3EMQ7T2oO35eAHNccXysooMpt2zZg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/registration"
               className="btn-accent group"
             >
               Register Now
