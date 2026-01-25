@@ -29,22 +29,22 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="#about" className="hover:opacity-100 transition-opacity">
+                <a href="/home" className="hover:opacity-100 transition-opacity">
                   About Symposium
                 </a>
               </li>
               <li>
-                <a href="#registration" className="hover:opacity-100 transition-opacity">
+                <a href="/registration" className="hover:opacity-100 transition-opacity">
                   Registration
                 </a>
               </li>
               <li>
-                <a href="#abstract" className="hover:opacity-100 transition-opacity">
+                <a href="/abstract" className="hover:opacity-100 transition-opacity">
                   Submit Abstract
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:opacity-100 transition-opacity">
+                <a href="/contact" className="hover:opacity-100 transition-opacity">
                   Contact Us
                 </a>
               </li>
