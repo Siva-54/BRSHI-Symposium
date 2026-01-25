@@ -107,7 +107,7 @@ const RegistrationSection = () => {
           className="text-center mt-10"
         >
           <a
-            href="https://forms.google.com"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc_F1xdBDn-7uf66Wgpc3EMQ7T2oO35eAHNccXysooMpt2zZg/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary group text-lg px-8 py-4"

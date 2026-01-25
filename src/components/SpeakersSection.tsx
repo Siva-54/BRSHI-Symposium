@@ -78,9 +78,9 @@ const SpeakersSection = () => {
                 <User className="w-12 h-12 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
 
-              <h3 className="font-heading font-semibold text-lg mb-1">{speaker.name}</h3>
+              {/* <h3 className="font-heading font-semibold text-lg mb-1">{speaker.name}</h3> */}
               <p className="text-sm text-primary font-medium mb-1">{speaker.role}</p>
-              <p className="text-xs text-muted-foreground">{speaker.affiliation}</p>
+              {/* <p className="text-xs text-muted-foreground">{speaker.affiliation}</p> */}
 
               {speaker.placeholder && (
                 <span className="inline-block mt-3 text-xs bg-muted text-muted-foreground px-3 py-1 rounded-full">

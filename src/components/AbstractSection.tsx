@@ -61,7 +61,7 @@ const AbstractSection = () => {
               </ul>
 
               <a
-                href="https://tinyurl.com/2hsu6wde"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSenm0EL5oJ8MK93B5qJ4GwO4Bd9-ha9fS9v1FvkN8qoJBW6RA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary group w-full justify-center"
@@ -119,7 +119,7 @@ const AbstractSection = () => {
             </div>
 
             {/* Submission Link */}
-            <div className="card-base text-center">
+            {/* <div className="card-base text-center">
               <p className="text-sm text-muted-foreground mb-3">Abstract Submission Link</p>
               <a
                 href="https://tinyurl.com/2hsu6wde"
@@ -129,7 +129,7 @@ const AbstractSection = () => {
               >
                 https://tinyurl.com/2hsu6wde
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
