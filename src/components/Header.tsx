@@ -116,11 +116,11 @@ const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`
                     px-4 py-3 rounded-lg transition-colors font-medium
-                    ${textColor}
+                    text-foreground
                     hover:text-primary hover:bg-primary/5
                   `}
-                  activeClassName={activeClass}
-                >
+                  activeClassName="text-primary bg-primary/10"
+                  >
                   {link.label}
                 </NavLink>
               ))}
