@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { FileText, Send, BookOpen, ArrowRight, ExternalLink } from "lucide-react";
+import { FileText, Send, BookOpen, ArrowRight, ExternalLink, FolderDown  } from "lucide-react";
 
 const guidelines = [
   "Abstract should be relevant to the symposium themes",
@@ -59,6 +59,16 @@ const AbstractSection = () => {
                   </li>
                 ))}
               </ul>
+
+               <a
+                href="https://drive.google.com/drive/folders/1L6k1GY1i4x_ofB2fRUT6X6hMbyUHLucJ?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full btn-primary group flex items-center justify-center mb-4"
+              >
+                <FolderDown className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                Download Abstract Guidelines and Templates
+              </a>
 
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSenm0EL5oJ8MK93B5qJ4GwO4Bd9-ha9fS9v1FvkN8qoJBW6RA/viewform"
@@ -118,18 +128,17 @@ const AbstractSection = () => {
               </div>
             </div>
 
-            {/* Submission Link */}
-            {/* <div className="card-base text-center">
-              <p className="text-sm text-muted-foreground mb-3">Abstract Submission Link</p>
-              <a
-                href="https://tinyurl.com/2hsu6wde"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary font-mono text-sm hover:underline break-all"
-              >
-                https://tinyurl.com/2hsu6wde
-              </a>
-            </div> */}
+           {/* <div className="card-base text-center border border-accent/40 bg-accent/5 shadow-lg shadow-accent/20 rounded-xl p-6 transition-all hover:shadow-accent/40 hover:bg-accent/10">
+            <p className="text-sm text-muted-foreground mb-3">Submission Guidelines</p>
+            <a
+              href="https://tinyurl.com/2hsu6wde"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-mono text-sm hover:underline break-all"
+            >
+              Submission Guidelines
+            </a>
+          </div> */}
           </motion.div>
         </div>
       </div>
