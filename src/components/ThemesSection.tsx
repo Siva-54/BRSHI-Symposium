@@ -12,6 +12,7 @@ import {
   MapPin,
   Car,
   Settings,
+  FolderDown,
 } from "lucide-react";
 
 const themes = [
@@ -78,13 +79,24 @@ const ThemesSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-6"
         >
           <h2 className="section-title">Symposium Themes</h2>
           <p className="section-subtitle mx-auto">
             Explore the key focus areas driving innovation in highway infrastructure
           </p>
         </motion.div>
+        <div className="w-full flex items-center justify-center mb-6">
+          <a
+            href="https://drive.google.com/drive/folders/18vb-8crlQHWfgZRaiQVUyVYiNAFp75tN?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary group flex items-center justify-center mb-4"
+          >
+            <FolderDown className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+            Download Detailed Themes
+          </a>
+        </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {themes.map((theme, index) => (
