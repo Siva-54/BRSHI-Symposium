@@ -89,19 +89,30 @@ const AbstractSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-6"
           >
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="card-base text-center">
-                <Send className="w-8 h-8 text-primary mx-auto mb-2" />
-                <p className="text-3xl font-heading font-bold text-foreground">500</p>
-                <p className="text-sm text-muted-foreground">Max Words</p>
-              </div>
-              <div className="card-base text-center">
-                <BookOpen className="w-8 h-8 text-primary mx-auto mb-2" />
-                <p className="text-3xl font-heading font-bold text-foreground">10</p>
-                <p className="text-sm text-muted-foreground">Theme Areas</p>
-              </div>
+            {/* Themes Preview List */}
+          <div className="card-base p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <BookOpen className="w-7 h-7 text-primary" />
+              <h3 className="font-heading font-bold text-lg">Symposium Themes</h3>
             </div>
+
+            <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+              <li>Advanced Pavement Materials and Sustainable Technologies</li>
+              <li>Resilient Pavement Design, Analysis, and Performance</li>
+              <li>Ground Improvement and Pavement Geotechnics</li>
+              <li>Pavement Distress, Maintenance, and Asset Management</li>
+              <li>Smart, Digital, and Emerging Highway Technologies</li>
+              <li>Highway Geometry, Traffic Operations, and Safety</li>
+            </ul>
+
+            <a
+              href="/themes"
+              className="btn-primary w-full mt-6 flex items-center justify-center group"
+            >
+              View All Themes
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
 
             {/* Publications Info */}
             <div className="relative card-base border border-accent/40 
@@ -109,24 +120,16 @@ const AbstractSection = () => {
                   shadow-[0_0_30px_rgba(99,102,241,0.25)]
                   hover:shadow-[0_0_45px_rgba(99,102,241,0.4)]
                   transition-all duration-300">
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-lg 
-                              bg-accent/30 
-                              ring-2 ring-accent/50
-                              flex items-center justify-center flex-shrink-0">
-                <BookOpen className="w-6 h-6 text-accent" />
-              </div>
-                <div>
-                  <h4 className="font-heading font-semibold text-lg mb-2 text-accent">
-                    Publications
-                  </h4>
-                  <p className="text-sm font-semibold text-muted-foreground">
-                    The Organizing Committee is in contact with possible publishers for book chapters or indexed conference proceedings. Updates will be shared soon.
-                  </p>
-                </div>
-              </div>
+            <div className="flex items-center gap-3 mb-6">
+             <div className="w-12 h-12 rounded-lg bg-accent/30 ring-2 ring-accent/50 flex items-center justify-center flex-shrink-0"> <BookOpen className="w-6 h-6 text-accent" /> </div>
+              <h3 className="font-heading font-bold text-xl">Publications</h3>
             </div>
+            <p className="text-muted-foreground">
+              The Organizing Committee is in contact with possible publishers for book
+              chapters or indexed conference proceedings. Updates will be shared soon.
+            </p>
+          </div>
+
 
            {/* <div className="card-base text-center border border-accent/40 bg-accent/5 shadow-lg shadow-accent/20 rounded-xl p-6 transition-all hover:shadow-accent/40 hover:bg-accent/10">
             <p className="text-sm text-muted-foreground mb-3">Submission Guidelines</p>
