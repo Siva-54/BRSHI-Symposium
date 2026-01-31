@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { FileText, Send, BookOpen, ArrowRight, ExternalLink, FolderDown  } from "lucide-react";
 
 const guidelines = [
@@ -105,13 +106,13 @@ const AbstractSection = () => {
               <li>Highway Geometry, Traffic Operations, and Safety</li>
             </ul>
 
-            <a
-              href="/themes"
+            <Link
+              to="/themes"
               className="btn-primary w-full mt-6 flex items-center justify-center group"
             >
               View All Themes
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </div>
 
             {/* Publications Info */}
