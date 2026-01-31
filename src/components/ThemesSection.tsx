@@ -4,67 +4,74 @@ import { useRef } from "react";
 import {
   Layers,
   Ruler,
-  Building2,
   Mountain,
   Construction,
-  Leaf,
   Cpu,
   MapPin,
-  Car,
-  Settings,
-  FolderDown,
 } from "lucide-react";
 
 const themes = [
   {
     icon: Layers,
-    title: "Pavement Material & Characterization",
-    description: "Advanced materials testing, characterization techniques, and performance evaluation",
+    title: "Advanced Pavement Materials and Sustainable Technologies",
+    points: [
+      "Pavement materials and characterization",
+      "Concrete technology",
+      "Sustainable and recycled materials",
+      "Low-carbon and eco-friendly material innovations",
+    ],
   },
   {
     icon: Ruler,
-    title: "Analysis & Design of Pavement",
-    description: "Structural design methods, stress analysis, and load transfer mechanisms",
-  },
-  {
-    icon: Building2,
-    title: "Concrete Technology",
-    description: "Innovative concrete mixtures, durability enhancement, and sustainability",
+    title: "Resilient Pavement Design, Analysis, and Performance",
+    points: [
+      "Pavement structural design and analysis",
+      "Mechanistic–empirical approaches",
+      "Climate-resilient pavement systems",
+      "Performance-based design methodologies",
+    ],
   },
   {
     icon: Mountain,
-    title: "Soil Stabilization",
-    description: "Ground improvement techniques and foundation engineering for highways",
+    title: "Ground Improvement and Pavement Geotechnics",
+    points: [
+      "Soil stabilization and ground improvement techniques",
+      "Innovative and bio-based stabilizers",
+      "Subgrade performance and durability",
+      "Geotechnical aspects in pavement",
+      "Utilization of marginal/weak soils",
+    ],
   },
   {
     icon: Construction,
-    title: "Failure & Rehabilitation of Pavement",
-    description: "Distress identification, maintenance strategies, and rehabilitation methods",
-  },
-  {
-    icon: Leaf,
-    title: "Sustainable Materials",
-    description: "Recycled materials, green technologies, and eco-friendly alternatives",
+    title: "Pavement Distress, Maintenance, and Asset Management",
+    points: [
+      "Pavement failure mechanisms",
+      "Maintenance and rehabilitation strategies",
+      "Pavement management systems",
+      "Lifecycle cost and performance assessment",
+    ],
   },
   {
     icon: Cpu,
-    title: "Emerging Technologies",
-    description: "Smart pavements, IoT applications, and digital transformation",
+    title: "Smart, Digital, and Emerging Highway Technologies",
+    points: [
+      "Smart pavements and sensing technologies",
+      "AI, machine learning, and digital twins",
+      "Intelligent transport systems (ITS)",
+      "Automation in construction and monitoring",
+    ],
   },
   {
     icon: MapPin,
-    title: "Geometric Design of Highways",
-    description: "Alignment design, sight distance, and safety considerations",
-  },
-  {
-    icon: Car,
-    title: "Traffic Engineering Aspects",
-    description: "Traffic flow analysis, capacity studies, and congestion management",
-  },
-  {
-    icon: Settings,
-    title: "Pavement Management Systems",
-    description: "Asset management, lifecycle analysis, and decision support tools",
+    title: "Highway Geometry, Traffic Operations, and Safety",
+    points: [
+      "Geometric design of highways",
+      "Traffic flow and operations",
+      "Road safety analysis and audits",
+      "Sustainable and safe mobility solutions",
+      "Highway infrastructure planning",
+    ],
   },
 ];
 
@@ -82,40 +89,37 @@ const ThemesSection = () => {
           className="text-center mb-6"
         >
           <h2 className="section-title">Symposium Themes</h2>
+
+          {/* Statement Added */}
           <p className="section-subtitle mx-auto">
-            Explore the key focus areas driving innovation in highway infrastructure
+            The themes of the symposium focus on resilient and sustainable road
+            infrastructure and include, but are not limited to the following below.
           </p>
         </motion.div>
-        <div className="w-full flex items-center justify-center mb-6">
-          <a
-            href="https://drive.google.com/drive/folders/18vb-8crlQHWfgZRaiQVUyVYiNAFp75tN?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary group flex items-center justify-center mb-4"
-          >
-            <FolderDown className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-            Download Detailed Themes
-          </a>
-        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {themes.map((theme, index) => (
             <motion.div
               key={theme.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="card-base group text-center"
+              className="card-base group"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                 <theme.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
               </div>
-              <h3 className="font-heading font-semibold text-base mb-2 leading-tight">
+
+              <h3 className="font-heading font-semibold text-lg mb-3 leading-tight">
                 {theme.title}
               </h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                {theme.description}
-              </p>
+
+              {/* Render Points */}
+              <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+                {theme.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
