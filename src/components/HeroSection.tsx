@@ -3,6 +3,7 @@ import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/heronit.jpg";
 import nitLogo from "@/assets/logo.png";
 import CountdownTimer from "./CountdownTimer";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -97,13 +98,10 @@ const HeroSection = () => {
             transition={{ delay: 0.7 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a
-              href="/registration"
-              className="btn-accent group"
-            >
+            <Link to="/registration" className="btn-accent group">
               Register Now
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </motion.div>
 
           {/* Organizer Logo */}

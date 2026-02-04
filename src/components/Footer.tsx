@@ -1,5 +1,6 @@
 import nitLogo from "@/assets/logo.png";
 import { Mail, MapPin, ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -27,26 +28,30 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-heading font-semibold mb-4">Quick Links</h4>
+
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="/home" className="hover:opacity-100 transition-opacity">
+                <Link to="/home" className="hover:opacity-100 transition-opacity">
                   About Symposium
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="/registration" className="hover:opacity-100 transition-opacity">
+                <Link to="/registration" className="hover:opacity-100 transition-opacity">
                   Registration
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="/abstract" className="hover:opacity-100 transition-opacity">
+                <Link to="/abstract" className="hover:opacity-100 transition-opacity">
                   Submit Abstract
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a href="/contact" className="hover:opacity-100 transition-opacity">
+                <Link to="/contact" className="hover:opacity-100 transition-opacity">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
