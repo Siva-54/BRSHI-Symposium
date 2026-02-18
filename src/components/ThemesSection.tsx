@@ -38,7 +38,7 @@ const themes = [
       "Soil stabilization and ground improvement techniques",
       "Innovative and bio-based stabilizers",
       "Subgrade performance and durability",
-      "Geotechnical aspects in pavement",
+      "Geotechnical aspects in Pavement",
       "Utilization of marginal/weak soils",
     ],
   },
@@ -73,7 +73,54 @@ const themes = [
       "Highway infrastructure planning",
     ],
   },
+  {
+    icon: Layers,
+    title: "Resilient and Performance-Based Design of Highway Structures",
+    points: [
+      "Seismic and wind-resistant design of bridges and elevated corridors",
+      "Performance-based and reliability-based structural design",
+      "Progressive collapse prevention and redundancy",
+      "Climate-adaptive structural systems",
+      "IRC code provisions and future design frameworks",
+    ],
+  },
+  {
+    icon: Construction,
+    title: "Sustainable Materials, Rehabilitation and Structural Health Monitoring",
+    points: [
+      "Use of low-carbon and recycled materials in bridges",
+      "FRP and advanced composites for strengthening",
+      "Structural Health Monitoring (SHM) and smart sensing systems",
+      "Life-cycle assessment and durability design",
+      "Repair and retrofitting of aging highway structures",
+    ],
+  },
+  {
+    icon: Mountain,
+    title:
+      "Climate-Resilient Water Resources and Drainage Systems for Highway Infrastructure",
+    points: [
+      "Hydrological design of cross-drainage works and culverts",
+      "Flood risk assessment and watershed management along highways",
+      "Scour analysis and protection of bridge foundations",
+      "Storm water management and sustainable drainage systems",
+      "Impact of climate change on highway hydraulic structures",
+    ],
+  },
+  {
+    icon: Ruler,
+    title:
+      "Environmental Sustainability and Impact Mitigation in Highway Development",
+    points: [
+      "Environmental Impact Assessment (EIA) for highway projects",
+      "Carbon footprint and life-cycle environmental assessment",
+      "Air and noise pollution mitigation strategies",
+      "Sustainable construction practices and green highways",
+      "Waste utilization and circular economy in road construction",
+    ],
+  },
 ];
+
 
 const ThemesSection = () => {
   const ref = useRef(null);

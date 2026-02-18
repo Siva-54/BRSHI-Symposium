@@ -97,14 +97,19 @@ const AbstractSection = () => {
               <h3 className="font-heading font-bold text-lg">Symposium Themes</h3>
             </div>
 
-            <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-              <li>Advanced Pavement Materials and Sustainable Technologies</li>
-              <li>Resilient Pavement Design, Analysis, and Performance</li>
-              <li>Ground Improvement and Pavement Geotechnics</li>
-              <li>Pavement Distress, Maintenance, and Asset Management</li>
-              <li>Smart, Digital, and Emerging Highway Technologies</li>
-              <li>Highway Geometry, Traffic Operations, and Safety</li>
-            </ul>
+           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+            <li>Advanced Pavement Materials and Sustainable Technologies</li>
+            <li>Resilient Pavement Design, Analysis, and Performance</li>
+            <li>Ground Improvement and Pavement Geotechnics</li>
+            <li>Pavement Distress, Maintenance, and Asset Management</li>
+            <li>Smart, Digital, and Emerging Highway Technologies</li>
+            <li>Highway Geometry, Traffic Operations, and Safety</li>
+            <li>Resilient and Performance-Based Design of Highway Structures</li>
+            <li>Sustainable Materials, Rehabilitation and Structural Health Monitoring</li>
+            <li>Climate-Resilient Water Resources and Drainage Systems for Highway Infrastructure</li>
+            <li>Environmental Sustainability and Impact Mitigation in Highway Development</li>
+          </ul>
+
 
             <Link
               to="/themes"
