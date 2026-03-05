@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.png";
+import brshi_logo from "@/assets/BRSHI_Logo.jpeg"
 import { NavLink } from "./NavLink";
 
 const navLinks = [
@@ -58,6 +59,11 @@ const Header = () => {
               src={logo}
               alt="NIT Rourkela Logo"
               className="h-12 w-12 md:h-14 md:w-14 object-contain"
+            />
+            <img
+              src={brshi_logo}
+              alt="BRSHI Logo"
+              className="h-16 w-16 md:h-20 md:w-20 object-contain"
             />
             <div className={`hidden sm:block ${textColor}`}>
               <p className="text-xs font-medium opacity-80">

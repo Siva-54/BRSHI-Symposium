@@ -58,9 +58,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-md md:text-md opacity-90 mb-8 max-w-lg mx-auto"
+            className="text-md md:text-md opacity-90 mb-4 max-w-lg mx-auto"
           >
-            A national-level technical forum bringing together policymakers, engineers, researchers, and industry professionals
+            A national-level technical forum bringing together policymakers,
+            engineers, researchers, and industry professionals
           </motion.p>
 
           {/* Event Info */}
@@ -68,13 +69,15 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4"
           >
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-accent" />
               <span className="font-semibold">June 26-28, 2026</span>
             </div>
+
             <div className="hidden sm:block w-px h-6 bg-primary-foreground/30" />
+
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-accent" />
               <span className="font-semibold">NIT Rourkela, Odisha</span>
@@ -86,7 +89,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="mb-10"
+            className="mb-4"
           >
             <CountdownTimer targetDate="2026-06-26T09:00:00" />
           </motion.div>
@@ -104,13 +107,27 @@ const HeroSection = () => {
             </Link>
           </motion.div>
 
+          {/* Microsoft CMT Note */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="mt-4 text-xs md:text-sm opacity-80 max-w-2xl mx-auto leading-relaxed"
+          >
+            <strong>Note:</strong> The Microsoft CMT service was used for managing the
+            peer-reviewing process for this conference. This service was provided
+            for free by Microsoft and they bore all expenses, including costs for
+            Azure cloud services as well as for software development and support.
+          </motion.p>
+
           {/* Organizer Logo */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
-            className="mt-16 pt-8 border-t border-primary-foreground/20"
+            className="mt-12 pt-8 border-t border-primary-foreground/20"
           >
+
           </motion.div>
         </motion.div>
       </div>
