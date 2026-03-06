@@ -107,19 +107,6 @@ const HeroSection = () => {
             </Link>
           </motion.div>
 
-          {/* Microsoft CMT Note */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="mt-4 text-xs md:text-sm opacity-80 max-w-2xl mx-auto leading-relaxed"
-          >
-            <strong>Note:</strong> The Microsoft CMT service was used for managing the
-            peer-reviewing process for this conference. This service was provided
-            for free by Microsoft and they bore all expenses, including costs for
-            Azure cloud services as well as for software development and support.
-          </motion.p>
-
           {/* Organizer Logo */}
           <motion.div
             initial={{ opacity: 0 }}
