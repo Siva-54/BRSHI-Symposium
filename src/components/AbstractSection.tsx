@@ -7,7 +7,7 @@ import {
   ArrowRight,
   ExternalLink,
   FolderDown,
-  Info 
+  Info
 } from "lucide-react";
 
 const guidelines = [
@@ -25,6 +25,7 @@ const AbstractSection = () => {
   return (
     <section id="abstract" className="section-padding bg-secondary" ref={ref}>
       <div className="section-container">
+
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,8 +40,8 @@ const AbstractSection = () => {
         </motion.div>
 
         {/* GRID LAYOUT */}
-        <div className="grid gap-8 max-w-6xl mx-auto lg:grid-cols-2">
-          
+        <div className="grid gap-8 max-w-6xl mx-auto lg:grid-cols-2 lg:items-stretch">
+
           {/* LEFT LARGE CARD */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -48,7 +49,8 @@ const AbstractSection = () => {
             transition={{ duration: 0.6 }}
             className="lg:row-span-2"
           >
-            <div className="card-base h-full">
+            <div className="card-base h-full flex flex-col">
+
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <FileText className="w-6 h-6 text-primary" />
@@ -71,30 +73,45 @@ const AbstractSection = () => {
                     <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold flex-shrink-0">
                       {index + 1}
                     </span>
-                    <span className="text-sm text-muted-foreground">{item}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
 
-              <a
-                href="https://drive.google.com/drive/folders/1L6k1GY1i4x_ofB2fRUT6X6hMbyUHLucJ?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full btn-primary group flex items-center justify-center mb-8"
-              >
-                <FolderDown className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-                Download Abstract Guidelines and Templates
-              </a>
+              {/* Buttons section pushed to bottom */}
+              <div className="mt-auto space-y-4">
 
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSenm0EL5oJ8MK93B5qJ4GwO4Bd9-ha9fS9v1FvkN8qoJBW6RA/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary group w-full flex items-center justify-center"
-              >
-                Submit Your Abstract
-                <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1L6k1GY1i4x_ofB2fRUT6X6hMbyUHLucJ?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full btn-primary group flex items-center justify-center"
+                >
+                  <FolderDown className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                  Download Abstract Guidelines and Templates
+                </a>
+
+                {/* SMALL CMT NOTE */}
+                <div className="border-l-4 border-accent bg-accent/5 text-sm text-muted-foreground p-3 rounded-md flex gap-2 items-start">
+                  <Info className="w-4 h-4 text-accent flex-shrink-0 mt-[2px]" />
+                  <span>
+                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                  </span>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSenm0EL5oJ8MK93B5qJ4GwO4Bd9-ha9fS9v1FvkN8qoJBW6RA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary group w-full flex items-center justify-center"
+                >
+                  Submit Your Abstract
+                  <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+
+              </div>
             </div>
           </motion.div>
 
@@ -104,7 +121,7 @@ const AbstractSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <div className="card-base p-6">
+            <div className="card-base p-6 h-full">
               <div className="flex items-center gap-3 mb-4">
                 <BookOpen className="w-7 h-7 text-primary" />
                 <h3 className="font-heading font-bold text-lg">
@@ -141,17 +158,21 @@ const AbstractSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <div className="card-base border border-accent/40 
+            <div
+              className="card-base border border-accent/40 
               bg-gradient-to-br from-accent/10 via-accent/5 to-background
               shadow-[0_0_30px_rgba(99,102,241,0.25)]
               hover:shadow-[0_0_45px_rgba(99,102,241,0.4)]
-              transition-all duration-300 p-6">
+              transition-all duration-300 p-6 h-full"
+            >
 
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-accent/30 ring-2 ring-accent/50 flex items-center justify-center">
                   <BookOpen className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-heading font-bold text-xl">Publications</h3>
+                <h3 className="font-heading font-bold text-xl">
+                  Publications
+                </h3>
               </div>
 
               <p className="text-muted-foreground">
@@ -159,34 +180,10 @@ const AbstractSection = () => {
                 for book chapters or indexed conference proceedings. Updates
                 will be shared soon.
               </p>
-            </div>
-          </motion.div>
-
-          {/* CMT NOTE FULL WIDTH */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.3 }}
-            className="lg:col-span-2"
-          >
-            <div className="card-base border-l-4 border-accent bg-accent/5 p-6 flex gap-4 items-start">
-
-              {/* Icon */}
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center">
-                <Info className="w-5 h-5 text-accent" />
-              </div>
-
-              {/* Text */}
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">Note:</strong> The Microsoft CMT service
-                was used for managing the peer-reviewing process for this conference.
-                This service was provided for free by Microsoft and they bore all
-                expenses, including costs for Azure cloud services as well as for
-                software development and support.
-              </p>
 
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
