@@ -95,10 +95,14 @@ const AbstractSection = () => {
 
                 {/* SMALL CMT NOTE */}
                 <div className="border-l-4 border-accent bg-accent/5 text-sm text-muted-foreground p-3 rounded-md flex gap-2 items-start">
-                  <Info className="w-4 h-4 text-accent flex-shrink-0 mt-[2px]" />
-                  <span>
-                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-                  </span>
+                  <Info className="w-4 h-4 text-accent flex-shrink-0 mt-[3px]" />
+
+                  <p id="cmt-disclosure" className="leading-relaxed">
+                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+                    This service was provided for free by Microsoft and they bore all expenses, including costs for
+                    Azure cloud services as well as for software development and support.
+                  </p>
+
                 </div>
 
                 <a
