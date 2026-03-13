@@ -106,7 +106,7 @@ const AbstractSection = () => {
                 </div>
 
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSenm0EL5oJ8MK93B5qJ4GwO4Bd9-ha9fS9v1FvkN8qoJBW6RA/viewform"
+                  href="https://cmt3.research.microsoft.com/BRSHI2026"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary group w-full flex items-center justify-center"
