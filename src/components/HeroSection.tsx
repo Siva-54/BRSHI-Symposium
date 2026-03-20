@@ -12,8 +12,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
@@ -92,6 +91,18 @@ const HeroSection = () => {
             className="mb-4"
           >
             <CountdownTimer targetDate="2026-06-26T09:00:00" />
+          </motion.div>
+
+          {/* Running Announcement */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.65 }}
+            className="mb-6 overflow-hidden whitespace-nowrap"
+          >
+            <div className="animate-marquee text-accent font-semibold text-sm md:text-base">
+              🚨 The deadline for submission of extended abstract has been extended to 10 April 2026.
+            </div>
           </motion.div>
 
           {/* CTA Buttons */}
