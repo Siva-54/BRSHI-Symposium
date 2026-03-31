@@ -10,12 +10,12 @@ const dates = [
     status: "open",
   },
   {
-    date: "April 10, 2026",
+    date: "April 15, 2026",
     event: "Last Date of Abstract Submission",
     status: "upcoming",
   },
   {
-    date: "April 10, 2026",
+    date: "April 15, 2026",
     event: "Notification of Acceptance",
     status: "upcoming",
   },
@@ -73,11 +73,10 @@ const ImportantDatesSection = () => {
                   {/* Timeline dot */}
                   <div className="hidden md:flex items-center justify-center w-16 flex-shrink-0">
                     <div
-                      className={`w-4 h-4 rounded-full border-4 ${
-                        item.status === "open"
-                          ? "bg-accent border-accent/30 animate-pulse-glow"
-                          : "bg-primary border-primary/30"
-                      }`}
+                      className={`w-4 h-4 rounded-full border-4 ${item.status === "open"
+                        ? "bg-accent border-accent/30 animate-pulse-glow"
+                        : "bg-primary border-primary/30"
+                        }`}
                     />
                   </div>
 
