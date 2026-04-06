@@ -131,11 +131,11 @@ const RegistrationSection = () => {
                 <tbody className="divide-y divide-border">
                   <tr>
                     <td className="py-2 font-medium text-muted-foreground">Account Name</td>
-                    <td className="py-2 text-right">Continuing Education NIT, Rourkela</td>
+                    <td className="py-2 text-right">Conference, NIT Rourkela</td>
                   </tr>
                   <tr>
                     <td className="py-2 font-medium text-muted-foreground">Account No.</td>
-                    <td className="py-2 text-right font-mono">10138951784</td>
+                    <td className="py-2 text-right font-mono">36734418111</td>
                   </tr>
                   <tr>
                     <td className="py-2 font-medium text-muted-foreground">Bank</td>
@@ -151,7 +151,7 @@ const RegistrationSection = () => {
                   </tr>
                   <tr>
                     <td className="py-2 font-medium text-muted-foreground">UPI ID</td>
-                    <td className="py-2 text-right font-mono">01389517841@sbi</td>
+                    <td className="py-2 text-right font-mono">2804180418@sbi</td>
                   </tr>
                 </tbody>
               </table>

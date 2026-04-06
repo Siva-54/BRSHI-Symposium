@@ -180,9 +180,6 @@ const AbstractSection = () => {
               </div>
 
               <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                <li>The Organizing Committee is in contact with possible publishers
-                  for book chapters or indexed conference proceedings. Updates
-                  will be shared soon.</li>
                 <li>Accepted papers will be published as book chapters in the Lecture Notes in Civil Engineering series by Springer. Additionally, selected high-quality papers will be recommended for publication in the Journal of Traffic and Transportation Engineering (Elsevier), subject to the journal’s review process.</li>
               </ul>
 

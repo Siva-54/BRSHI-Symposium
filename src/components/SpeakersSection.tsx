@@ -2,31 +2,35 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { User, ExternalLink } from "lucide-react";
+import paridaImg from '@/assets/speakers/parida.jpg'
+import animeshImg from '@/assets/speakers/animesh.jpeg'
+import dharamveerImg from '@/assets/speakers/dharamveer.jpeg'
+import prapoornaImg from '@/assets/speakers/krishna.jpeg'
 
 const speakers = [
   {
-    name: "Distinguished Speaker",
+    name: "Prof. Manoranjan Parida",
     role: "Keynote Speaker",
-    affiliation: "IISc Bangalore",
-    placeholder: true,
+    affiliation: "(Former Director, CSIR-CRRI), IIT Roorkee",
+    image: paridaImg,
   },
   {
-    name: "Eminent Professor",
+    name: "Prof. Animesh Das",
     role: "Keynote Speaker",
-    affiliation: "IIT Delhi",
-    placeholder: true,
+    affiliation: "Professor, IIT Kanpur",
+    image: animeshImg,
   },
   {
-    name: "Industry Expert",
-    role: "Invited Speaker",
-    affiliation: "NHAI",
-    placeholder: true,
+    name: "Prof. Dharamveer Singh",
+    role: "Keynote Speaker",
+    affiliation: "Professor, IIT Bombay",
+    image: dharamveerImg,
   },
   {
-    name: "Research Scholar",
-    role: "Invited Speaker",
-    affiliation: "NIT Rourkela",
-    placeholder: true,
+    name: "Prof. B. Krishna Prapoorna",
+    role: "Keynote Speaker",
+    affiliation: "Professor, IIT Tirupati",
+    image: prapoornaImg,
   },
 ];
 
@@ -56,11 +60,6 @@ const SpeakersSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="max-w-3xl mx-auto mb-12"
         >
-          <div className="card-base border-primary/20 bg-primary/5 text-center">
-            <p className="text-muted-foreground">
-              <strong className="text-foreground">Coming Soon!</strong> Eminent academicians from IISc/IITs/NITs/foreign Universities and professionals from reputed organizations will deliver keynote and invited lectures.
-            </p>
-          </div>
         </motion.div>
 
         {/* Speakers Grid */}
@@ -74,19 +73,15 @@ const SpeakersSection = () => {
               className="card-base text-center group"
             >
               {/* Avatar Placeholder */}
-              <div className="w-24 h-24 rounded-full bg-muted flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
-                <User className="w-12 h-12 text-muted-foreground group-hover:text-primary transition-colors" />
-              </div>
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-primary/20 group-hover:scale-105 transition"
+              />
 
-              {/* <h3 className="font-heading font-semibold text-lg mb-1">{speaker.name}</h3> */}
+              <h3 className="font-heading font-semibold text-lg mb-1">{speaker.name}</h3>
               <p className="text-sm text-primary font-medium mb-1">{speaker.role}</p>
-              {/* <p className="text-xs text-muted-foreground">{speaker.affiliation}</p> */}
-
-              {speaker.placeholder && (
-                <span className="inline-block mt-3 text-xs bg-muted text-muted-foreground px-3 py-1 rounded-full">
-                  To be announced
-                </span>
-              )}
+              <p className="text-xs text-muted-foreground">{speaker.affiliation}</p>
             </motion.div>
           ))}
         </div>
