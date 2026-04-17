@@ -7,19 +7,19 @@ const registrationTypes = [
   {
     icon: GraduationCap,
     type: "Student Delegates",
-    price: "₹4,000",
+    price: "₹3,500",
     description: "For research scholars and students pursuing higher studies",
   },
   {
     icon: Briefcase,
     type: "Faculty Delegates",
-    price: "₹7,500",
+    price: "₹6,000",
     description: "For academicians and faculty members from institutions",
   },
   {
     icon: Building,
     type: "Industry Delegates",
-    price: "₹10,000",
+    price: "₹8,500",
     description: "For professionals from industry and organizations",
   },
 ];

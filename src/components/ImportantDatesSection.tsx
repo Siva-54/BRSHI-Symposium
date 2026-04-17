@@ -10,12 +10,12 @@ const dates = [
     status: "open",
   },
   {
-    date: "April 15, 2026",
+    date: "April 22, 2026",
     event: "Last Date of Abstract Submission",
     status: "upcoming",
   },
   {
-    date: "April 15, 2026",
+    date: "May 10, 2026",
     event: "Notification of Acceptance",
     status: "upcoming",
   },
@@ -25,7 +25,7 @@ const dates = [
     status: "upcoming",
   },
   {
-    date: "April 20, 2026",
+    date: "May 12, 2026",
     event: "Online Registration Deadline",
     status: "upcoming",
   },
