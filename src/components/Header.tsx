@@ -12,6 +12,7 @@ const navLinks = [
   { label: "Call for Abstract", to: "/abstract" },
   { label: "Speakers", to: "/speakers" },
   { label: "Committee", to: "/committee" },
+  { label: "Sponsors", to: "/sponsors" },
   { label: "Contact", to: "/contact" },
 ];
 

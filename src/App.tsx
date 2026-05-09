@@ -14,6 +14,7 @@ import Speakers from "./pages/Speakers";
 import Committee from "./pages/Committee";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Sponsors from "./pages/Sponsors";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/abstract" element={<Abstract />} />
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
