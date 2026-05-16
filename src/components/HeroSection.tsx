@@ -1,7 +1,7 @@
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/heronit.jpg";
 import jtte from "@/assets/jtte.jpeg";
-import springer from "@/assets/springer.jpeg";
+import springer from "@/assets/springer.jfif";
 import CountdownTimer from "./CountdownTimer";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const NAV_HEIGHT = 80;
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-between overflow-hidden">
-      
+
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -158,7 +158,7 @@ const HeroSection = () => {
                       transition duration-300
                       shadow-md
                     ">
-                      <div className="
+                    <div className="
                       h-44
                       overflow-hidden
                     ">
@@ -168,14 +168,8 @@ const HeroSection = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-
-                    <div className="p-2">
-                      <p className="text-[10px] md:text-[11px] font-semibold text-center text-black leading-tight">
-                        Transportation in Developing Economies
-                      </p>
-                    </div>
                   </div>
-                    
+
                   {/* Journal 2 */}
                   <div className="
                       group
@@ -197,11 +191,6 @@ const HeroSection = () => {
                       />
                     </div>
 
-                    <div className="p-2">
-                      <p className="text-[10px] md:text-[11px] font-semibold text-center text-black leading-tight">
-                        Transportation Research Record
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>

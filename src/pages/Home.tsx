@@ -15,7 +15,6 @@ const Home = () => {
         <AboutSection />
         <ThemesSection />
         <ImportantDatesSection />
-        <AccommodationSection />
       </main>
       <Footer />
     </div>

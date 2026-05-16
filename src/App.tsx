@@ -8,13 +8,14 @@ import Index from "./pages/Index";
 import ThemesPage from "./pages/ThemesPage";
 import ScrollToTop from "./components/ScrollTop";
 import Home from "./pages/Home";
-import Registration from "./pages/Registration"; 
+import Registration from "./pages/Registration";
 import Abstract from "./pages/Abstract";
 import Speakers from "./pages/Speakers";
 import Committee from "./pages/Committee";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Sponsors from "./pages/Sponsors";
+import Accommodation from "./pages/Accommodation";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +25,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
-      <ScrollToTop /> 
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/committee" element={<Committee />} />
           <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

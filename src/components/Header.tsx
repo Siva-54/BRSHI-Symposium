@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Speakers", to: "/speakers" },
   { label: "Committee", to: "/committee" },
   { label: "Sponsors", to: "/sponsors" },
+  { label: "Accommodation", to: "/accommodation" },
   { label: "Contact", to: "/contact" },
 ];
 

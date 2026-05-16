@@ -10,24 +10,19 @@ const dates = [
     status: "open",
   },
   {
-    date: "April 22, 2026",
-    event: "Last Date of Abstract Submission",
-    status: "upcoming",
-  },
-  {
-    date: "May 10, 2026",
+    date: "June 12, 2026",
     event: "Notification of Acceptance",
-    status: "upcoming",
+    status: "open",
   },
   {
     date: "April 15, 2026",
     event: "Call for Abstract from Industry",
-    status: "upcoming",
+    status: "open",
   },
   {
-    date: "May 12, 2026",
-    event: "Online Registration Deadline",
-    status: "upcoming",
+    date: "June 12, 2026",
+    event: "Registration Deadline",
+    status: "open",
   },
   {
     date: "June 26-28, 2026",
