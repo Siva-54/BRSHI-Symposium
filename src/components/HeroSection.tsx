@@ -4,6 +4,7 @@ import jtte from "@/assets/jtte.jpeg";
 import springer from "@/assets/springer.jfif";
 import CountdownTimer from "./CountdownTimer";
 import { Link } from "react-router-dom";
+import sponsorLogo from "@/assets/sponsor-logo.png"
 
 const NAV_HEIGHT = 80;
 
@@ -30,18 +31,29 @@ const HeroSection = () => {
       >
 
         {/* ================= TOP SECTION ================= */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
 
-          {/* Badge */}
-          <span className="inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs mb-3 backdrop-blur-md">
-            National Symposium 2026
-          </span>
+          {/* Sponsor Badge */}
+          <div className="flex flex-col items-center mb-2">
+
+            <div className="flex items-center gap-3 px-4 py-1">
+
+              <img
+                src={sponsorLogo}
+                alt="ANRF"
+                className="h-8 md:h-10 lg:h-12 xl:h-14 w-auto"
+              />
+            </div>
+            <p className="mt-2 text-sm md:text-base font-medium text-white/90 justify-center">
+              ANRF Sponsored Symposium on
+            </p>
+          </div>
 
           {/* Title */}
           <h1
             className="font-extrabold leading-tight mb-4"
             style={{
-              fontSize: "clamp(2rem, 5vw, 4rem)",
+              fontSize: "clamp(1.5rem, 4vw, 3rem)",
             }}
           >
             Building Resilient and Sustainable

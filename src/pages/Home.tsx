@@ -5,6 +5,7 @@ import ThemesSection from "@/components/ThemesSection";
 import ImportantDatesSection from "@/components/ImportantDatesSection";
 import AccommodationSection from "@/components/AccommodationSection";
 import Footer from "@/components/Footer";
+import Sponsors from "./Sponsors";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header />
       <main>
         <HeroSection />
+        <Sponsors />
         <AboutSection />
         <ThemesSection />
         <ImportantDatesSection />
