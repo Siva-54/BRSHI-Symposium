@@ -29,10 +29,10 @@ const sponsorCategories = [
   // },
 
   {
-    category: "Diamond Sponsors",
+    category: "Diamond Sponsor",
     sponsors: [
       {
-        name: "Dilip Buildcon Limited",
+        name: "DILIP BUILDCON LIMITED",
         logo: diamond1,
       },
     ],
@@ -97,13 +97,31 @@ const sponsorCategories = [
   },
 ];
 
+type SponsorLevel = "diamond" | "gold" | "silver" | "session";
+
 const SponsorCard = ({
   logo,
   name,
+  level,
 }: {
   logo: string;
   name: string;
+  level: SponsorLevel;
 }) => {
+  const sizeClasses = {
+    diamond: "h-36 md:h-44",
+    gold: "h-28 md:h-32",
+    silver: "h-20 md:h-24",
+    session: "h-16 md:h-20",
+  };
+
+  const textSizeClasses = {
+    diamond: "text-lg md:text-xl font-semibold",
+    gold: "text-base md:text-lg font-semibold",
+    silver: "text-sm md:text-base font-medium",
+    session: "text-xs md:text-sm font-medium",
+  };
+
   return (
     <div
       className="
@@ -120,7 +138,9 @@ const SponsorCard = ({
         items-center
       "
     >
-      <div className="h-16 md:h-22 flex items-center justify-center">
+      <div
+        className={`${sizeClasses[level]} flex items-center justify-center`}
+      >
         <img
           src={logo}
           alt={name}
@@ -128,7 +148,7 @@ const SponsorCard = ({
         />
       </div>
 
-      <h3 className="mt-4 text-sm md:text-base font-medium text-center">
+      <h3 className={`mt-4 text-center ${textSizeClasses[level]}`}>
         {name}
       </h3>
     </div>
@@ -182,11 +202,20 @@ const Sponsors = () => {
                   `}
                 >
                   {section.sponsors.map((sponsor, index) => (
-                    <SponsorCard
-                      key={index}
-                      logo={sponsor.logo}
-                      name={sponsor.name}
-                    />
+                  <SponsorCard
+                    key={index}
+                    logo={sponsor.logo}
+                    name={sponsor.name}
+                    level={
+                      section.category === "Diamond Sponsor"
+                        ? "diamond"
+                        : section.category === "Gold Sponsors"
+                        ? "gold"
+                        : section.category === "Silver & Other Sponsors"
+                        ? "silver"
+                        : "session"
+                    }
+                  />
                   ))}
                 </div>
 
