@@ -32,10 +32,6 @@ const sponsorCategories = [
     category: "Diamond Sponsors",
     sponsors: [
       {
-        name: "Anusandhan National Research Foundation (ANRF)",
-        logo: sponsorLogo,
-      },
-      {
         name: "Dilip Buildcon Limited",
         logo: diamond1,
       },

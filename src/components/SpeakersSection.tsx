@@ -4,8 +4,8 @@ import { useRef } from "react";
 import { User, ExternalLink } from "lucide-react";
 import paridaImg from '@/assets/speakers/parida.jpg'
 import animeshImg from '@/assets/speakers/animesh.jpeg'
-import dharamveerImg from '@/assets/speakers/dharamveer.jpeg'
 import prapoornaImg from '@/assets/speakers/krishna.jpeg'
+import umeshImg from '@/assets/speakers/umesh.png'
 
 const speakers = [
   {
@@ -20,12 +20,12 @@ const speakers = [
     affiliation: "Professor, IIT Kanpur",
     image: animeshImg,
   },
-  // {
-  //   name: "Prof. Dharamveer Singh",
-  //   role: "Keynote Speaker",
-  //   affiliation: "Professor, IIT Bombay",
-  //   image: dharamveerImg,
-  // },
+  {
+    name: "Prof. Umesh Chandra Sahoo",
+    role: "Keynote Speaker",
+    affiliation: "Professor, IIT Bhubaneswar",
+    image: umeshImg,
+  },
   {
     name: "Prof. B. Krishna Prapoorna",
     role: "Keynote Speaker",
@@ -63,7 +63,7 @@ const SpeakersSection = () => {
         </motion.div>
 
         {/* Speakers Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {speakers.map((speaker, index) => (
             <motion.div
               key={index}
